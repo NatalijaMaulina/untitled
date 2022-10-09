@@ -4,16 +4,15 @@ import java.util.Scanner;
 
 public class FirstClass {
     public static void main(String[] args) {
-//        " Jaunzēlandes platība ir  "+ platiba " kvadrātkilometri" + " un tās galvaspilsēta ir" + pilseta " Iedzīvotāji pārsvarā runa " + valoda "valodās. Valsts valūta ir - NZ " + valuta);
-//        " - ir valsts Okeānijā, kurā dzīvo "
+
         String valsts = "Jaunzēlande";
         int iedzivotaji = 5132690;
         double platiba =268.7;
         String pilseta = "Vellingtona";
-        String valoda = "Angļu un maori";
+        String valoda = "angļu un maori";
         char valuta = '$';
         System.out.println(valsts);
-        System.out.println(" - ir valsts Okeānijā, kurā dzīvo");
+        System.out.println( valsts + " - ir valsts Okeānijā, kurā dzīvo " + iedzivotaji + " iedzīvotāji \n Jaunzēlandes platība ir "+ platiba + " kvadrātkilometri un tās galvaspilsēta ir " + pilseta +". \n Iedzīvotāji pārsvarā runā " + valoda + " valodās. \n Valsts valūta ir - NZ" + valuta+ " jeb Jaunžēlandes dolārs");
 
         int x = 20;
         int y = 5 ;
