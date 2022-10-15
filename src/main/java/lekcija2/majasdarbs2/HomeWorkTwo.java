@@ -7,20 +7,23 @@ public class HomeWorkTwo {
         printCard();
         printCard();
         printCard();
-        printBusinessCard2("Jānis","Bērziņš", "65463252","2005");
-        printBusinessCard2("Līga", "Liepiņa", "56478239","1985");
+        printBusinessCard2("Jānis","Bērziņš", "5463252","2005");
+        printBusinessCard2("Līga", "Liepiņa", "5478239","1985");
 
     }
-public static int izteiksmes (){
+
+    public static void izteiksmes() {
         int x = 6;
-        System.out.println(x>0);
-        System.out.println(x<0);
-        System.out.println(x>5 && x=10 || x==10);
-        System.out.println(x>5 && x!=5 && x<10);
-        System.out.println(x=0||x=10);
-        System.out.println(x*x>10);
+        System.out.println(x > 0);
+        System.out.println(x < 0);
+        System.out.println(x > 5 && x == 10 || x == 10);
+        System.out.println(x > 5 && x != 5 && x < 10);
+        System.out.println(x == 0 || x == 10);
+        System.out.println(x * x > 10);
     }
-    public static int month (){
+
+}
+    public static void month (){
         Scanner ievade= new Scanner(System.in);
         System.out.println("Ievadiet mēneša numuru ");
         int month = ievade.nextInt();
@@ -29,7 +32,7 @@ public static int izteiksmes (){
                 System.out.println("January");
                 break;
             case 2:
-                System.out.println("Fenruary");
+                System.out.println("Feruary");
                 break;
             case 3:
                 System.out.println("March");
@@ -61,18 +64,27 @@ public static int izteiksmes (){
             case 12:
                 System.out.println("December");
                 break;
+            default:
+                System.out.println("Ievadīts nekorekts numurs,šāds mēnesis neeksistē");
         }
     }
-////
-////    public static int maxNumber (){
-////        Scanner ievade2= new Scanner(System.in);
-////        System.out.println("Ievadiet trīs veselus skaitļus ");
-////        int x = ievade2.nextInt();
-////        int y = ievade2.nextInt();
-////        int z = ievade2.nextInt();
-////        int max = Math.max(x;y);
-//
-//    }
+}
+   public static int maxNumber (){
+    Scanner ievade2= new Scanner(System.in);
+      System.out.println("Ievadiet trīs veselus skaitļus ");
+       int x = ievade2.nextInt();
+       int y = ievade2.nextInt();
+       int z = ievade2.nextInt();
+       if (x>y && x>z) {
+           System.out.println("Lielākais skaitlis ir " + x);
+       }else if(y>x && y>z){
+               System.out.println("Lielākais skaitlis ir "+ y );
+           }else {
+           System.out.println("Lielākais skaitlis ir "+ z );
+       }
+
+    }
+
     public static void luksofors() {
         Scanner ievade3 = new Scanner(System.in);
         System.out.println("Ievadiet luksofora krāsu");
