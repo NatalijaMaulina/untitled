@@ -25,10 +25,10 @@ public class Main {
         }
         System.out.println("Summa ir: " + summa);
         String[] kartis= { "Pīķa dūzis", "Ercena kalps", "Kreiča dāma"};
-        int i=0;
-        while( i< kartis.length){
-            System.out.println(kartis[i] + " ");
-            i++;
+        int j=0;
+        while( j< kartis.length){
+            System.out.println(kartis[j] + " ");
+            j++;
 
         }
 
@@ -36,13 +36,13 @@ public class Main {
     public static int aprekinaLaukumu (int platums, int garums){
         return garums*platums;
     }
-    public static int masivi() {
+    public static void masivi() {
         int[] menesaTerini = {100, 40, 23, 44, 55, 254};
         System.out.println("Masīva lielums ir" + menesaTerini.length);
         String[] produktuSaraksts = {"Piens", "Maize", "Siers"};
         produktuSaraksts[2] = "Biezpiens";
     }
-    public static char name() {
+    public static void name() {
         char[] vards = {'N', 'A', 'T', 'Ā', 'L', 'I', 'J', 'A'};
         for (char mansVards : vards) {
             System.out.println(mansVards);
@@ -61,7 +61,7 @@ public class Main {
             x--;
         }
     }
-    public static String cars () {
+    public static void cars () {
         String[] cars = {"BMW", "Audi", "Mercedes", "Alfa Romeo"};
         int z = 0;
         while (z < 4) {

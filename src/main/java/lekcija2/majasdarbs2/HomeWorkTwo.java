@@ -7,8 +7,8 @@ public class HomeWorkTwo {
         printCard();
         printCard();
         printCard();
-        printBusinessCard2("Jānis","Bērziņš", "5463252","2005");
-        printBusinessCard2("Līga", "Liepiņa", "5478239","1985");
+        printBusinessCard2("Jānis","Bērziņš", 5463252L,2005);
+        printBusinessCard2("Līga", "Liepiņa", 5478239L,1985);
 
     }
 
@@ -22,7 +22,7 @@ public class HomeWorkTwo {
         System.out.println(x * x > 10);
     }
 
-}
+
     public static void month (){
         Scanner ievade= new Scanner(System.in);
         System.out.println("Ievadiet mēneša numuru ");
@@ -68,21 +68,22 @@ public class HomeWorkTwo {
                 System.out.println("Ievadīts nekorekts numurs,šāds mēnesis neeksistē");
         }
     }
-}
-   public static int maxNumber (){
+
+   public static void maxNumber (){
     Scanner ievade2= new Scanner(System.in);
       System.out.println("Ievadiet trīs veselus skaitļus ");
        int x = ievade2.nextInt();
        int y = ievade2.nextInt();
        int z = ievade2.nextInt();
+       int maxNumber;
        if (x>y && x>z) {
            System.out.println("Lielākais skaitlis ir " + x);
+
        }else if(y>x && y>z){
                System.out.println("Lielākais skaitlis ir "+ y );
            }else {
-           System.out.println("Lielākais skaitlis ir "+ z );
+           System.out.println("Lielākais skaitlis ir " + z);
        }
-
     }
 
     public static void luksofors() {
