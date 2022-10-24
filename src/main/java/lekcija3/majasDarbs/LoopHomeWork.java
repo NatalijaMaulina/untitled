@@ -6,7 +6,6 @@ public class LoopHomeWork {
     public static void main(String[] args) {
 
     }
-
     public static void summa() {
         int summa = 0;
         Scanner ievade = new Scanner(System.in);
