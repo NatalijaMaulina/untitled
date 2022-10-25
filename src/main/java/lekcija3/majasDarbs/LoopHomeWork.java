@@ -4,19 +4,19 @@ import java.util.Scanner;
 
 public class LoopHomeWork {
     public static void main(String[] args) {
-
+    summa();
     }
     public static void summa() {
-        int summa = 0;
+
         Scanner ievade = new Scanner(System.in);
-        System.out.println("Ievadiet veselu skaitli");
-        int x = ievade.nextInt();
+        int summa = 0;
         while (summa < 100) {
+            System.out.println("Ievadiet veselu skaitli");
+            int x = ievade.nextInt();
             summa = summa + x;
-            summa++;
+            if (summa == 100 || summa > 100) {
+                System.out.println("GATAVS");
         }
-        if (summa == 100 || summa > 100) {
-            System.out.println("GATAVS");
 
         }
     }
