@@ -8,7 +8,7 @@ public class Rinkis {
         return r*r*PI;
     }
 
-    public double rekinatLinijasGarumu (){
+    public double rekinatLinijasGarumu(){
         return 2*PI*r;
     }
 }

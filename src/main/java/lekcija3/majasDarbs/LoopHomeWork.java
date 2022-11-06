@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class LoopHomeWork {
     public static void main(String[] args) {
-    summa();
+
+    para();
     }
     public static void summa() {
 
@@ -28,11 +29,23 @@ public class LoopHomeWork {
             System.out.println(names);
             i++;
         }
+        do {
+            System.out.println(names);
+            i++;
+        }
+        while (i<names.length);
+        for (i = 0; i < names.length; i++) {
+            System.out.println(names);
+        }
+        for (String vardi : names) {
+            System.out.println(vardi);
+        }
         int[] shoes = {35, 43, 32, 40, 41};
         int j = 0;
         for (j = 0; j < shoes.length; j++) {
             System.out.println(shoes);
         }
+
         char[] letter = {'A', 'L', 'E', 'X'};
         for (int burti : letter) {
             System.out.println(burti);
@@ -45,13 +58,11 @@ public class LoopHomeWork {
     }
     public static void para (){
         int[] paraSkaitli=new int [100];
-        int i;
-        for(i=2;i<=100; i++){
+        for(int i=0;i<=paraSkaitli.length;i++){
             if(i%2==0){
+                System.out.println(paraSkaitli[i] + " ");
             }
-            System.out.println(paraSkaitli+ " ");
         }
-
     }
     public static int getFactorial(int f) {
         int result = 1;
