@@ -4,15 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class CheckoutPage {
+public class CheckoutPage extends BasePage{
 
-    WebDriver parluks;
     public CheckoutPage(WebDriver parluks) {
-        this.parluks = parluks;
+
+        super(parluks);
     }
 
     private By continueButton = By.id("continue");
-    private By pageTitle = By.className("title");
 
     private By errorText = By.cssSelector("h3");
 
@@ -32,8 +31,5 @@ public class CheckoutPage {
 
     }
 
-    public WebElement getPageTitle(){
-        return parluks.findElement(pageTitle);
-    }
 
 }

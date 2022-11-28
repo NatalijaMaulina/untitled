@@ -47,6 +47,12 @@
             <artifactId>testng</artifactId>
             <version>7.6.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.lalyos/jfiglet -->
+        <dependency>
+            <groupId>com.github.lalyos</groupId>
+            <artifactId>jfiglet</artifactId>
+            <version>0.0.9</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.poi</groupId>

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -51,6 +52,17 @@ public class SauceDemoLoginTest extends BaseTest {
         loginPage.login("standard_user", "secret_sauce");
         ProductsPage produktuLapa = new ProductsPage(parluks);
         Assert.assertEquals(produktuLapa.getPageTitle().getText(), "PRODUCTS");
+
+    }
+    @Test
+    public void actionTest () throws InterruptedException {
+         parluks.navigate().to("https://www.w3schools.com/howto/howto_css_dropdown.asp");
+         parluks.findElement(By.id("accept-choices")).click ();
+        Actions actions = new Actions(parluks);
+        WebElement element = parluks.findElement(By.cssSelector("button.dropbtn"));
+        actions.moveToElement(element).build().perform();
+        parluks.findElement(By.cssSelector("div.dropdown2 a")).click();
+        Thread.sleep(6000);
 
     }
 

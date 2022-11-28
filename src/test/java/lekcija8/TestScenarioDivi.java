@@ -27,7 +27,7 @@ public class TestScenarioDivi extends BaseTest {
         checkoutLapa.inputFirstName( "Jana");
         checkoutLapa.clickContinueButton();
         Thread.sleep(5000);
-        Assert.assertEquals(checkoutLapa.getErrorText(), "Error: Last Name is required");
+
 
     }
 
