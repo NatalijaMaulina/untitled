@@ -21,6 +21,18 @@ public class CheckoutPage extends BasePage{
         parluks.findElement(firstNameInputField).sendKeys(a);
     }
 
+    private By lastNameInputField = By.id("last-name");
+
+    public void inputLastName(String a){
+        parluks.findElement(lastNameInputField).sendKeys(a);
+    }
+
+    private By zipInputField = By.id("postal-code");
+
+    public void inputZip(String a){
+        parluks.findElement(zipInputField).sendKeys(a);
+    }
+
     public String getErrorText(){
         return parluks.findElement(errorText).getText();
 

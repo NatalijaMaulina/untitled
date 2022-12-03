@@ -9,15 +9,19 @@ public class ProductsPage extends BasePage{
 
         super(parluks);
     }
+    private By addToCartButton = By.id("add-to-cart-sauce-labs-onesie");
+    public WebElement getAddToCartButton(){
+        return parluks.findElement(addToCartButton);
+    }
 
     private By cartButton = By.id("shopping_cart_container");
-
 
     public WebElement getCartButton(){
         return parluks.findElement(cartButton);
     }
+    public void clickAddToCartButton() {
+        parluks.findElement(addToCartButton).click();
 
-
-
+    }
 
 }
