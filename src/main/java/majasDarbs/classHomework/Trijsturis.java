@@ -1,19 +1,17 @@
 package majasDarbs.classHomework;
 
-public class Trissturis {
+public class Trijsturis {
     int a;
     int  b;
     int  c;
-    int p;
+    int p ;
     double s;
 
-    public Trissturis(int a, int b, int c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
+    public Trijsturis(int a, int b, int c) {
+
     }
 
-    public Trissturis(int a, int b, int c, int p) {
+    public Trijsturis(int a, int b, int c, int p) {
         this.a = a;
         this.b = b;
         this.c = c;
