@@ -7,11 +7,10 @@ public class Trijsturis {
     int p ;
     double s;
 
-    public Trijsturis(int a, int b, int c) {
-
+    public Trijsturis() {
     }
 
-    public Trijsturis(int a, int b, int c, int p) {
+    public Trijsturis(int a, int b, int c) {
         this.a = a;
         this.b = b;
         this.c = c;
